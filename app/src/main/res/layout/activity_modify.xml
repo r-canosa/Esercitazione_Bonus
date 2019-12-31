@@ -3,194 +3,208 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.223">
-
-        <TextView
-            android:id="@+id/tvModify"
-            android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:text="Modifica password"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimary"
-            android:textSize="28sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="75dp"
-            android:textSize="18dp"
-            android:textColor="@color/Dettagli2"
-            android:text="Username" />
-
-        <View
-            android:layout_width="300dp"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-
-        <TextView
-            android:id="@+id/tvUsernameM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Username"
-            android:textColor="@color/Dettagli2"
-            android:textSize="18dp" />
-        <View
-            android:layout_width="300dp"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:textSize="18dp"
-            android:textColor="@color/Dettagli2"
-            android:text="Password" />
-        <View
-            android:layout_width="300dp"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-        <TextView
-            android:id="@+id/tvPassM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:textSize="18dp"
-            android:textColor="@color/Dettagli2"
-            android:inputType="textPersonName"
-            android:text="Password" />
-        <View
-            android:layout_width="300dp"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:textSize="18dp"
-            android:textColor="@color/Dettagli2"
-            android:text="Città" />
-        <View
-            android:layout_width="300dp"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-        <TextView
-            android:id="@+id/tvCityM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:textSize="18dp"
-            android:textColor="@color/Dettagli2"
-            android:inputType="textPersonName"
-            android:text="Città" />
-        <View
-            android:layout_width="300dp"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:textSize="18dp"
-            android:textColor="@color/Dettagli2"
-            android:text="Data di nascita" />
-        <View
-            android:layout_width="300dp"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-        <TextView
-            android:id="@+id/tvBirthM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:textSize="18dp"
-            android:textColor="@color/Dettagli2"
-            android:inputType="textPersonName"
-            android:text="Data di nascita" />
-
-        <TextView
-            android:id="@+id/tvDisplay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="Per modificare la password, assicurarsi\ndi inserirne una diversa da quella attuale. "
-            android:textSize="14sp"
-            android:textColor="@color/Errore"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/etNewPass1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:ems="10"
-            android:textColor="@color/Dettagli"
-            android:textColorHint="@color/Dettagli2"
-            android:hint="Nuova password"
-            android:inputType="textPassword" />
-
-        <EditText
-            android:id="@+id/etNewPass2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:textColor="@color/Dettagli"
-            android:textColorHint="@color/Dettagli2"
-            android:hint="Conferma password"
-            android:inputType="textPassword" />
-
-        <Button
-            android:id="@+id/btnConfirm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="Conferma"
-            android:textSize="18sp"
-            android:background="@drawable/button"
-            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.223">
 
-        <TextView
-            android:id="@+id/tvErrorM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/Errore"
-            android:layout_marginTop="20dp" />
+            <TextView
+                android:id="@+id/tvModify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="Modifica password"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:textSize="18dp"
+                android:textColor="@color/Dettagli2"
+                android:text="Username" />
 
-        <Button
-            android:id="@+id/btnBackM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="Back"
-            android:background="@drawable/button"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tvUsernameM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Username"
+                android:textColor="@color/Dettagli"
+                android:textSize="18dp" />
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/Dettagli2"
+                android:text="Password" />
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:id="@+id/tvPassM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="18dp"
+                android:textColor="@color/Dettagli"
+                android:inputType="textPersonName"
+                android:text="Password" />
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/Dettagli2"
+                android:text="Città" />
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:id="@+id/tvCityM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="18dp"
+                android:textColor="@color/Dettagli"
+                android:inputType="textPersonName"
+                android:text="Città" />
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/Dettagli2"
+                android:text="Data di nascita" />
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+            <TextView
+                android:id="@+id/tvBirthM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="18dp"
+                android:textColor="@color/Dettagli"
+                android:inputType="textPersonName"
+                android:text="Data di nascita" />
+
+            <TextView
+                android:id="@+id/tvDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Per modificare la password, assicurarsi\ndi inserirne una diversa da quella attuale. "
+                android:textSize="14sp"
+                android:textColor="@color/Errore"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etNewPass1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:textColor="@color/Dettagli"
+                android:textColorHint="@color/Dettagli2"
+                android:hint="Nuova password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/etNewPass2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/Dettagli"
+                android:textColorHint="@color/Dettagli2"
+                android:hint="Conferma password"
+                android:inputType="textPassword" />
+
+
+            <TextView
+                android:id="@+id/tvErrorM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Errore"
+                android:layout_marginTop="20dp" />
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Conferma"
+                android:textSize="18sp"
+                android:background="@drawable/button"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <Button
+                android:id="@+id/btnBackM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Back"
+                android:background="@drawable/button"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
