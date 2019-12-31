@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2C6820</color>
+    <color name="colorPrimaryDark">#0B2B00</color>
+    <color name="colorAccent">#0B2B00</color>
+    <color name="Dettagli">#658E9C</color>
+    <color name="Dettagli2">#405A63</color>
+    <color name="Link">#4D5382</color>
+    <color name="Errore">#540404</color>
+</resources>
